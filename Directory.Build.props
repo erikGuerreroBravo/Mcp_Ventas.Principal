@@ -1,0 +1,23 @@
+<Project>
+  <!--
+    Directory.Build.props: propiedades MSBuild comunes heredadas automaticamente
+    por TODOS los proyectos de la solucion. Evita duplicar configuracion en cada .csproj.
+  -->
+  <PropertyGroup>
+    <!-- Marco de destino unico para toda la solucion (.NET 9). -->
+    <TargetFramework>net9.0</TargetFramework>
+    <!-- Habilita los "using" implicito (System, System.Linq, etc.) sin declararlos. -->
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!-- Activa el analisis de referencia nula en tiempo de compilacion. -->
+    <Nullable>enable</Nullable>
+    <!-- Usa la ultima version del lenguaje C# disponible en el SDK. -->
+    <LangVersion>latest</LangVersion>
+    <!-- No tratamos las advertencias como errores: EF Core y el codigo generado
+         suelen emitir avisos que de otro modo romperian la compilacion. -->
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <!-- No generamos XML de documentacion para no inundar con avisos CS1591. -->
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <!-- Habilita el modo determinista para builds reproducibles. -->
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+</Project>

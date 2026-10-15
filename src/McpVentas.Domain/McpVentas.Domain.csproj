@@ -1,0 +1,6 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    McpVentas.Domain: nucleo del negocio.
+    Contiene enums y value objects puros, sin dependencias externas.
+  -->
+</Project>

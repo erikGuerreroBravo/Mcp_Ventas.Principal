@@ -1,0 +1,18 @@
+{
+  // Perfiles de inicio usados por "dotnet run" y por Visual Studio.
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    // Perfil para ejecutar el servidor MCP por HTTP.
+    "McpVentas.Server": {
+      // No abre navegador.
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      // Escucha en HTTP local en el puerto 3001.
+      "applicationUrl": "http://localhost:3001",
+      "environmentVariables": {
+        // Define el entorno de ejecucion como Development.
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

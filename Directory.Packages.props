@@ -1,0 +1,23 @@
+<Project>
+  <!--
+    Directory.Packages.props: Central Package Management (CPM).
+    Las versiones de los paquetes NuGet se declaran UNA sola vez aqui.
+    Los .csproj referencian los paquetes SIN version.
+  -->
+  <PropertyGroup>
+    <!-- Activa la gestion centralizada de versiones de paquetes. -->
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- SDK oficial de MCP para servidores HTTP en ASP.NET Core. -->
+    <PackageVersion Include="ModelContextProtocol.AspNetCore" Version="2.2.0" />
+    <!-- Proveedor de EF Core para SQL Server. -->
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.21" />
+    <!-- Herramientas de diseno de EF Core (scaffolding, migraciones). -->
+    <PackageVersion Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.21" />
+    <!-- Abstracciones de logging (ILogger<T>) para la capa Application. -->
+    <PackageVersion Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.21" />
+    <!-- Enlace de secciones de configuracion a clases tipadas (IOptions). -->
+    <PackageVersion Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="9.0.21" />
+  </ItemGroup>
+</Project>

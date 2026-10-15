@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    McpVentas.Infrastructure: acceso a datos (EF Core Database-First),
+    clases de configuracion tipadas y el registro de dependencias.
+  -->
+
+  <ItemGroup>
+    <!-- Depende de Application para implementar sus abstracciones (interfaces). -->
+    <ProjectReference Include="..\McpVentas.Application\McpVentas.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Proveedor de EF Core para SQL Server. -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" />
+    <!-- Enlace de configuracion a clases tipadas (IOptions<T> / GetSection().Get<T>()). -->
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" />
+    <!-- Herramientas de diseno (scaffolding/migraciones); no se propaga a consumidores. -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

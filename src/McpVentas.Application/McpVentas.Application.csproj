@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    McpVentas.Application: casos de uso (servicios), DTOs y contratos.
+    No depende de EF Core ni de ASP.NET Core (capa agnostica de tecnologia).
+  -->
+
+  <ItemGroup>
+    <!-- Depende del dominio para usar sus enums y tipos base. -->
+    <ProjectReference Include="..\McpVentas.Domain\McpVentas.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Abstracciones de ILogger<T> para registrar trazas en los casos de uso. -->
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+  </ItemGroup>
+</Project>

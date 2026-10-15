@@ -1,0 +1,26 @@
+# Archivos de compilacion y artefactos temporales de .NET
+bin/
+obj/
+
+# Carpeta oculta de Visual Studio (layout, indices, cache)
+.vs/
+
+# Archivos de usuario de Visual Studio / Rider
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Resultados de pruebas y cobertura
+[Tt]est[Rr]esult*/
+*.coverage
+coverage*.xml
+
+# Archivos de configuracion con secretos (NUNCA subir credenciales)
+.env
+*.env
+appsettings.*.local.json
+
+# Sistema operativo
+Thumbs.db
+.DS_Store

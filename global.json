@@ -1,0 +1,11 @@
+// global.json: fija la version del SDK de .NET para que todo el equipo (y el CI)
+// compile con exactamente la misma base de herramientas y se eviten diferencias.
+{
+  "sdk": {
+    // Version minima/exacta del SDK que debe usarse en esta solucion.
+    "version": "9.0.318",
+    // "latestFeature" permite usar una feature-band posterior dentro de la misma
+    // version mayor (9.0.x) si la 9.0.318 no estuviera instalada.
+    "rollForward": "latestFeature"
+  }
+}
